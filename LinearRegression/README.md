@@ -1,6 +1,8 @@
 # Linear regression
 
-Python, pandas, sklearn, matplotlib, pickle
+- Python, pandas, sklearn, matplotlib, pickle
+
+- Predicts grades in student exams
 
 #### Result
 <p align="center">
