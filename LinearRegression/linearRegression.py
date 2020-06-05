@@ -12,7 +12,7 @@ style.use("ggplot")
 
 currentPath = str(pathlib.Path(__file__).parent.absolute())
 
-data = pd.read_csv( currentPath + "\student-mat.csv", sep=";")
+data = pd.read_csv( currentPath + "\\student-mat.csv", sep=";")
 data = data[["G1", "G2", "G3", "studytime", "failures", "absences"]]
 
 predict = "G3"
@@ -37,7 +37,7 @@ x_train, x_test, y_train, y_test = sklearn.model_selection.train_test_split(X, y
 
 # Load pickle model
 
-pickle_in = open(currentPath + "\studentgrades.pickle", "rb")
+pickle_in = open(currentPath + "\\studentgrades.pickle", "rb")
 linear = pickle.load(pickle_in)
 print("-------------------------")
 print('Coefficient: \n', linear.coef_) # These are each slope value
